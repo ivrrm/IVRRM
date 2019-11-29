@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  /* outline: 1px solid red; */
+}
+
+body {
+  background: #00d5dd;
+}
+
+.sp {
+  width: 100%;
+  height: 600px;
+  margin-top: 40px;
+  background: #fff;
+  position: relative;
+}
+
+.sp::before,
+.sp::after {
+  content: "";
+  position: absolute;
+  top: 2.5%;
+  left: 0;
+  background: #eee;
+  height: 95%;
+  width: 100%;
+}
+
+.sp::before {
+  transform: translateX(-15px);
+  z-index: -1;
+}
+
+.sp::after {
+  transform: translateX(15px);
+  z-index: -1;
+}
+
+.img-wrapper {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 600px;
+}
+
+.details {
+  padding: 15% 5%;
+}
+.price h3 {
+  font-weight: 400;
+  font-size: 48px;
+}
+
+.details h2 {
+  font-weight: bolder;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.details p {
+  color: #323232;
+}
+
+.social {
+  width: 100%;
+  margin: 80px 0;
+}
+
+.social ul {
+  list-style: none;
+  margin: 0 auto;
+  width: 85%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cart-btn {
+  margin: 50px 0;
+}
+.cart-btn a:link,
+.cart-btn a:visited {
+  text-decoration: none;
+  background: #ff4b4c;
+  color: #fff;
+  padding: 15px 35px;
+}
+.cart-btn a:hover {
+  background: rgba(255, 75, 76, 0.9);
+}
+.social ul li {
+  width: 100%;
+  position: relative;
+  z-index: 99;
+}
+
+.social ul li a:link,
+.social ul li a:visited {
+  text-decoration: none;
+  display: block;
+  padding: 7px 5px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 100px;
+
+  width: 100%;
+}
+
+.hover-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  transform: translateX(-110%);
+  border-radius: 100px;
+  transition: all 0.6s;
+  padding: 6% 38px;
+  text-align: center;
+}
+
+.social ul li a:hover .hover-btn {
+  transform: translateX(0);
+}
+
+.social ul li:nth-child(1) a .hover-btn {
+  background: #25d366;
+}
+.social ul li:nth-child(2) a .hover-btn {
+  background: #0084ff;
+}
+.social ul li:nth-child(3) a .hover-btn {
+  background: #9b59b6;
+}
+
+.social ul li a:hover i {
+  color: #fff;
+}
+
+.hover-btn p {
+  line-height: 30px;
+  color: #fff;
+}
+
+.social ul li a i {
+  font-size: 30px;
+  transition: all 1s;
+}
+
+.social ul li:nth-child(1) a {
+  color: #25d366;
+}
+
+.social ul li:nth-child(2) a {
+  color: #0084ff;
+}
+.social ul li:nth-child(3) a {
+  color: #9b59b6;
+}
+
+.slick-prev {
+  left: 25px;
+  z-index: 99;
+}
+.slick-next {
+  right: 25px;
+  z-index: 99;
+}
+.slick-next:before,
+.slick-prev:before {
+  font-size: 30px;
+}
