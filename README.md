@@ -1,2 +1,0 @@
-# IVRRM
-E-Commerce project
